@@ -1,0 +1,230 @@
+/*Локальні шрифти*/
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+/* variables for all colors containers*/
+:root {
+  --color-brand-light: #2b7fff;
+  --color-brand-dark: #011c44;
+  --color-primary-dark: #000;
+  --color-primary-light: #fff;
+  --color-copyright: #747272;
+}
+
+/* Base styles */
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Домінантний колір + шрифт сторінки, входить до базових стилів і задається безпосередньо до боді та наслідується нащадками*/
+body {
+  color: var(--color-brand-dark);
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  background-color: #fff;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+address {
+  font-style: normal;
+}
+.section {
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/*Header styles*/
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 99px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.nav-list {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 40px;
+}
+.icons-list {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.logo-link {
+  display: block;
+}
+/*Header link styles */
+.header-link {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--color-brand-dark);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--color-brand-light);
+}
+.cosmetology-clinic {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+/*hero Section Styles*/
+
+/*Hero Titel Styles*/
+.hero-title {
+  font-family: "Play";
+  color: var(--color-brand-light);
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  width: 529px;
+  margin-bottom: 40px;
+}
+.button {
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--color-brand-light);
+  border-radius: 32px;
+  border: 2px solid var(--color-brand-light);
+  padding: 16px 32px;
+  margin-bottom: 14px;
+}
+.button:hover,
+.button:focus {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+.button-description {
+  color: #4a4a4a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+/*Sections Styles*/
+.hero-section {
+  padding-top: 16.5px;
+  padding-bottom: 126.8px;
+  padding-left: 206px;
+}
+.transformation-section {
+  padding-top: 40px;
+  padding-bottom: 176px;
+  padding-left: 100px;
+}
+.transformation-section-text {
+  margin-bottom: 40px;
+}
+.advantages-section {
+  padding-bottom: 96px;
+}
+.advantages-list {
+  padding: 24px 32px;
+}
+.procedure-section {
+  padding-bottom: 96px;
+}
+.contact-section {
+  padding-bottom: 94px;
+}
+.section-title-bz {
+  margin-bottom: 40px;
+}
+.section-title {
+  font-family: "Play";
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+.section-title .accent {
+  color: var(--color-brand-light);
+}
+
+/*Footer styles*/
+.footer-section {
+  background-color: var(--color-brand-dark);
+  padding: 56px 100px;
+}
+.footer-link {
+  font-size: 16px;
+  color: var(--color-primary-light);
+  margin-bottom: 16px;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-brand-light);
+}
+.address-link {
+  font-size: 16px;
+  color: var(--color-primary-light);
+  margin-bottom: 16px;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-brand-light);
+}
+.address-copyright {
+  font-size: 13px;
+  color: var(--color-copyright);
+}
